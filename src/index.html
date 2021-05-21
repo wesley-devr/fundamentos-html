@@ -5,25 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnologia</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container-hw100">
-        <div class="items-header">
-            <ul id="list-menu">
-                <a href=""><img class="logo-svg" src="./assets/img/cpu.svg" alt=""></a>   
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+        <div class="top-nav id="top-nav">
+                <a href="./index.html" class="active">Home</a>
+                <a href="./contato.html">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
         </div>
         <h1 class="title">Tecnologia</h1>
         <div class="container">
                 <div class="container-para">
-                    <div class="img-tech-world ">
-                        <img class="img-br50 img-wh300" src="./assets/img/image1.jpg" alt="Imagem de número binários">
+                    <div class="img-tech-world">
+                        <img 
+                        class="img-br50 img-wh300" 
+                        id="img-home" 
+                        src="./assets/img/image1.jpg" 
+                        alt="Imagem de número binários"
+                        onmousemove="zoomImgHome()"
+                        onmouseout="outImgHome()"
+                        >
                     </div>
                     <div class="paragraph">
                         <p>
@@ -51,7 +58,7 @@
                     </div>
                 </div>
         </div>
-        <footer class="footer-redes-sociais-container">
+        <footer class="footer-redes-sociais-container" id="mg-top">
             <div class="footer-redes-sociais-center">
                 <div class="footer-redes-sociais-icons">
                     <a href="https://wwww.facebook.com" target="_blank"><img class="icons-30-hw" src="./assets/img/facebook.png" alt="Ícone facebook"></a>
@@ -61,6 +68,7 @@
                 <p class="text-copy-right">Todos direitos reservados &copy;  Wesley</p>     
             </div>
         </footer>
+        <script src="./assets/js/script.js"></script>
     </div>
 </body>
 </html>
